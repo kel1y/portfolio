@@ -1,0 +1,62 @@
+<% for(var i = 0; i < blogs.length; i++) { %>
+    <div class="work-container">
+        <div class="work-2">
+            <div><img class="image2" src="image/youreal.png"></div>
+            <div class="work-2-2">
+                <div class='work-2-2-1'>
+                    <%= blogs[i].title %>
+                </div>
+                <div class='work-2-2-2'>
+                    <div class="work-text"><%= blogs[i].content %></div>
+                    <div class="work-text">
+                        <div class="like" id="like">
+                            <div onclick="postlike()" class="like-image" id="like">
+                                <img class="like-im" src="/image/like2.png">
+                            </div>
+                            <div class="like-number"><%= i+4 %></div>
+                        </div>
+                        <div class="comment" id="show-form">
+                            <div onclick="display()" class="comment-image" id="show-form">
+                                <img class="comment-im" src="image/comment6.png">
+                            </div>
+                            <div class="comment-number"><%= i+3 %></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="work-3">
+            <div><img class="image2" src="image/youreal.png"></div>
+            <div class="work-3-2">
+                <div class='work-3-2-1'>
+                    programming
+                </div>
+                <div class='work-3-2-2'>
+                    <div class="work-text">Lorem ipsum dolor sit amet consectetur.
+                        Risus aliquam semper tortor sed augue Lorem ipsum dolor sit amet consectetur.
+                        Risus aliquam semper tortor sed augue 
+                        Lorem ipsum dolor sit amet consectetur.
+                        Risus aliquam semper tortor sed augue  </div>
+                    <div class="work-text">
+                        <div class="like" id="like">
+                            <div onclick="postlike()" class="like-image" id="like">
+                                <img class="like-im" src="/image/like2.png">
+                            </div>
+                            <div class="like-number">0</div>
+                        </div>
+                        <div class="comment" id="show-form">
+                            <div onclick="display()" class="comment-image" id="show-form">
+                                <img class="comment-im" src="image/comment6.png">
+                            </div>
+                            <div class="comment-number">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
+
+

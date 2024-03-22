@@ -1,0 +1,311 @@
+    <head>
+    <meta charset="UTF-8">
+    <title>Ink-dashboard </title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="dashboard.js" defer></script>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">Admin</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Blogs</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Work</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Views</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <img src="image/short profile-modified.jpeg" alt="">
+        <span class="admin_name">Irakoze Kelly</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div id="show-form" class="box">
+          <div class="right-side">
+            <div class="box-topic">Post/Del/Edit blog</div>
+            <div class="number">140</div>
+            <div class="indicator">
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Add work</div>
+            <div class="number">38,876</div>
+            <div class="indicator">
+            </div>
+          </div>
+
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Contact messages</div>
+            <div class="number">128</div>
+            <div class="indicator">
+            </div>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Add Skills</div>
+            <div class="number">11,086</div>
+            <div class="indicator">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="box-2">
+      <form id="blogEditor">
+        <header>
+          <span id="close-btn">&times</span>
+        </header>
+        <label for="title">Blog Title</label>
+        <input type="text"  name="title" id="title">
+        <label for="sub-title">Blog Sub Title</label>
+        <input type="text" id="sub-title" name="subTitle">
+        
+        <label for="Content">Content</label>
+        <textarea name="content" id="Content"></textarea>
+        <br>
+        <button type="submit">send</button>
+        <br>
+        <button id="delete"> delete </button>
+        <br>
+        <button type="submit">Edit</button>
+        <br>
+      </form>
+        <div class="recent-blog box">
+          <div class="title">blogs</div>
+          <div class="blog-details">
+            <ul class="details">
+              <li class="topic">black panther</li>
+              <li><a href="#">Quick chess</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">civil structures</a></li>
+              <li><a href="#">Tournaments</a></li>
+              <li><a href="#">Felling sad</a></li>
+              <li><a href="#">Youtube views</a></li>
+              <li><a href="#">easy blockchain</a></li>
+            </ul>
+            <ul class="details">
+            <li class="topic">Reader</li>
+            <li><a href="#">Alex Doe</a></li>
+            <li><a href="#">David Mart</a></li>
+            <li><a href="#">Roe Parter</a></li>
+            <li><a href="#">Diana Penty</a></li>
+            <li><a href="#">Martin Paw</a></li>
+            <li><a href="#">Doe Alex</a></li>
+            <li><a href="#">Aiana Lexa</a></li>
+            <li><a href="#">Rexel Mags</a></li>
+             <li><a href="#">Tiana Loths</a></li>
+          </ul>
+          <ul class="details">
+            <li class="topic">comment</li>
+            <li><a href="#">nice-topic</a></li>
+            <li><a href="#">How is that possible</a></li>
+            <li><a href="#">who knows what that means</a></li>
+            <li><a href="#">I saw that story on Tv</a></li>
+            <li><a href="#">not interseted</a></li>
+            <li><a href="#">Please share me resources</a></li>
+            <li><a href="#">How to go deep into that</a></li>
+             <li><a href="#">Not familiar but I will try</a></li>
+            <li><a href="#">Imagination drives all</a></li>
+          </ul>
+          <ul class="details">
+            <li class="topic">Views</li>
+            <li><a href="#">200</a></li>
+            <li><a href="#">24</a></li>
+            <li><a href="#">25</a></li>
+            <li><a href="#">170</a></li>
+            <li><a href="#">56</a></li>
+            <li><a href="#">44</a></li>
+            <li><a href="#">67</a></li>
+             <li><a href="#">23</a></li>
+             <li><a href="#">46</a></li>
+          </ul>
+          </div>
+          <div class="button">
+            <a href="#" class="button-text">See All</a>
+          </div>
+        </div>
+        <div class="top-blog box">
+          <div class="title">most viewed articles</div>
+          <ul class="top-blog-details">
+            <li>
+            <a href="#">
+              <img src="image/sunglasses.jpg" alt="">
+              <span class="name">3 dimension glasses</span>
+            </a>
+            <span class="watch">1107</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="image/download.jpg" alt="">
+              <span class="name">Moon landing (NASA)</span>
+            </a>
+            <span class="watch">1567</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="image/pngtree-fifa-world-cup-2022-with-qatar-flag-free-png-image_4725757.png" alt="">
+              <span class="name">Fifa word cup</span>
+            </a>
+            <span class="watch">1234</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="image/raf,750x1000,075,t,FFFFFF_97ab1c12de.u2.jpg" alt="">
+              <span class="name">Science behind string theory</span>
+            </a>
+            <span class="watch">2312</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="image/gettyimages-1003196772-612x612.jpg" alt="">
+              <span class="name">what to do when fire attacks</span>
+            </a>
+            <span class="watch">1456</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="image/pngtree-cyber-__security-shield-png-image_5610122.jpg" alt="">
+              <span class="name">Cyber security</span>
+            </a>
+            <span class="watch">2345</span>
+          <li>
+            <a href="#">
+              <img src="image/51hZs6w-SML._AC_SX425_.jpg" alt="">
+              <span class="name">practice makes perfect</span>
+            </a>
+            <span class="watch">2345</span>
+          </li>
+<li>
+            <a href="#">
+              <img src="image/shirt.jpg" alt="">
+              <span class="name">informal vs formal manner</span>
+            </a>
+            <span class="watch">1245</span>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+    <h1>List of users</h1>
+    <table border="1">
+      <tr>
+        <th>User name</th>
+        <th>Email</th>
+        <th>Password</th>
+      </tr>
+      <tbody id="table-content"></tbody>
+    </table>
+
+    <h1>All my blogs</h1>
+    <table border="1">
+      <tr>
+        <th>Blog Id</th>
+        <th>Blog Content</th>
+      </tr>
+      <tbody id="blogs-table"></tbody>
+    </table>
+  </section>
+
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>

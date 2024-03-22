@@ -1,0 +1,17 @@
+<% for(var i = 0; i < blogs.length; i++) { %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= blogs[i].topic %></td>
+        <td><%= blogs[i].title %></td>
+        <td><%= blogs[i].content %></td>
+        <td><%= blogs[i].status %></td>
+        <td>
+            <a href="/update-blog?id=<%= blogs[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow delete" data-id=<%= blogs[i]._id%> >
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% } %>

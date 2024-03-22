@@ -1,0 +1,48 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="login.css" />
+  <title>Signup Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h2 class="title">Welcome <span></span></h2>
+      <form action="/signup" method="POST" class="login-content" id="form">
+        <div class="input-group">
+          <input
+            autofocus
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            class="input input-error"
+            required
+            id="email"
+          />
+        </div>
+        <div class="email error"></div>
+        <div class="input-group">
+          <input
+            type="password"
+            required
+            placeholder="Enter your password"
+            class="input input-error"
+            name="password"
+            id="password"
+          />
+        </div>
+        <div class="password error-message"></div>
+
+        <!-- <a href="./admin/admin.html"> -->
+        <button class="login-btn" type="submit" id="login_btn" onsubmit="postInfo">
+          Signup
+        </button>
+        <!-- </a> -->
+        <a href="/" class="go-back">
+          <div class="back-to-home">Go back Home</div>
+        </a>
+      </form>
+    </div>
+  </div>
+</body>
