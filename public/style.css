@@ -56,6 +56,33 @@ body {
   color: white;
   margin-left: -100px;
 }
+
+.right-1:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.right-2:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.right-3:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.right-4:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.right-5:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.right-6:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+
 .link {
   color: var(--brand);
 }
