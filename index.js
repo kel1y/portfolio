@@ -45,10 +45,8 @@ app.use((req, res, next) => {
 });
 
 // database connection
-const dbURI =
-  //'mongodb+srv://inkkelly:kelly.j.ke@cluster0.v4ttnn7.mongodb.net/personalweb?retryWrites=true&w=majority';
-   //'mongodb+srv://inkkelly6:nAiOu4yJTQPbHuVb@portfolio.x5efnbq.mongodb.net/';
-   'mongodb+srv://inkkelly6:nAiOu4yJTQPbHuVb@portfolio.x5efnbq.mongodb.net/?retryWrites=true&w=majority&appName=portfolio';
+const dbURI = process.env.DATABASE_URL
+  
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
