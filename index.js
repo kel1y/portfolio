@@ -45,7 +45,7 @@ app.use((req, res, next) => {
 });
 
 // database connection
-const dbURI = process.env.DATABASE_URL; 
+const dbURI = 'mongodb+srv://kelly:VYjwWXBOrIha1n1M@cluster0.xwewes7.mongodb.net/'; 
 mongoose
   .connect(dbURI, {
     useNewUrlParser: true,
