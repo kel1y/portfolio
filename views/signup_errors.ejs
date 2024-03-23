@@ -21,7 +21,7 @@
             id="email"
           />
         </div>
-        <div class="email error"><%= emailerror %></div>
+        <div class="email error"><span id="oops"><%= emailerror %></span></div>
         <div class="input-group">
           <input
             type="password"
@@ -32,7 +32,7 @@
             id="password"
           />
         </div>
-        <div class="password error"><%= passworderror %></div>
+        <div class="password error"><span id="oops"><%= passworderror %></span></div>
 
         <!-- <a href="./admin/admin.html"> -->
         <button class="login-btn" type="submit" id="login_btn" onsubmit="postInfo">
