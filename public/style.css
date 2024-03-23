@@ -1,14 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,400;1,500;1,600&family=Open+Sans:wght@400;600&display=swap");
 :root {
   --dark1: #21201e;
   --dark2: #2d2b29;
   --brand: #ed9902;
   --white: #ffffff;
-  --body: #9b968b;
+  --body: white;
 }
 body {
   background-color: var(--dark1);
   padding: 65px;
+}
+
+.explore{
+  color: black;
+}
+a{
+  color: #a68956;
 }
 .left-1,
 .left-2,
@@ -82,6 +89,10 @@ body {
   cursor: pointer;
 }
 
+.button-3:hover {
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
 
 .link {
   color: var(--brand);
@@ -91,8 +102,6 @@ body {
 }
 .right-bottom {
   flex: 3;
-  /* height: 800px; */
-  /* width: 480px; */
 }
 .right-bottom {
   border-radius: 50%;
@@ -157,7 +166,9 @@ about {
   font-size: 18px;
   font-stretch: 100%;
   font-style: normal;
-  font-weight: 500px;
+  font-weight: 300;
+  font-weight: 300px;
+  font-weight: lighter;
   letter-spacing: normal;
   text-transform: none;
   width: 400px;
@@ -559,8 +570,6 @@ about {
   padding-top: 0.01px;
   padding-bottom: 0.01px;
   width: 80px;
-  /* padding-right: 1px;
-  padding-left: 1px; */
   color: var(--dark2);
   border-color: transparent;
   border-radius: 8px;
@@ -586,17 +595,6 @@ about {
   margin-top: 70px;
 }
 .footer-left-content {
-  /* font-family: "Rubik", sans-serif;
-  font-size: 28px;
-  font-stretch: 100%;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  font-weight: 700;
-  color: white;
-  font-weight: lighter;
-  font-size: small; */
   color: white;
   flex: 1;
   font-weight: lighter;
@@ -651,8 +649,7 @@ about {
   inset: 0;
   color: transparent;
   z-index: 2000;
-  /* padding-top: 3em; */
-  background-color: transparent
+  background-color: transparent;
 
   display: grid;
   max-width: 50px;
@@ -669,126 +666,33 @@ about {
 #close-btn {
   background-color: #ffffff;
 }
-
-/* form header span {
-  background-color: rgb(255, 255, 255);
-  float: left;
-  max-width: 10px;
-  font-size: 2em;
-  cursor: pointer;
-  padding: 1em;
-} */
-
 section {
   background-color: black;
 }
 
-/* /* @media (max-width: 1240px) {
-  .landing{
-    width: calc(100% - 60px);
-    left: 60px;
-  }
-  .landing{
-    left: 220px;
-    width: calc(100% - 220px);
-    overflow: hidden;
-  }
-  .left{
-    width: 100%;
-}
-.right{
-    width:100%;
-}
-}
-@media (max-width: 700px) {
-  .landing{
-    height: 50px;
-    min-width: 40px;
-  }
-  .left{
-    width: 100%;
-}
-.right{
-    width:100%;
-}
-}
-/* @media (max-width: 550px) {
-  .overview-boxes .box{
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .sidebar.active ~ .home-section nav .profile-details{
-    display: none;
-  }
-} */
-/* @media (max-width: 400px) {
-  .landing{
-    margin-left: 150px;
-    width: 100%;
-    left: 0;
-    background-color: #ED9902;
-  }
-}
-  /* .landing{
-    left: 60px;
-    width: calc(100% - 60px);
-  }
-  .left{
-    width: 100%;
-}
-.right{
-    width:100%;
-}
-} */
 
-/* @media (max-width: 1240px) {
-    .landing{
-      width: calc(100% - 60px);
-      left: 60px;
-    }
-    .landing{
-      left: 220px;
-      width: calc(100% - 220px); */
-/* overflow: hidden; */
-/* }
-    .left{
-        width: 100%;
-    }
-    .right{
-        width:100%;
-    }
-  }
-  @media (max-width: 700px) {
-    .landing{
-      width: 100%;
-    }
-    .left{
-        width: 100%;
-    }
-    .right{
-        width:100%;
-    }
-  } */
-/* @media (max-width: 550px) {
-    .overview-boxes .box{
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    .sidebar.active ~ .home-section nav{
-      display: none;
-    }
-  } */
-/* @media (max-width: 400px) {
-    .landing{
-        margin-left: 150px;
-      width: 100%;
-      left: 0;
-      background-color: #ED9902;
-    }
-    .left{
-        width: 100%;
-    }
-    .right{
-        width:100%;
-    }
-} */
+/* Apply Rubik font to titles */
+.title-work,
+.porttitle,
+.signtitle,
+.contact-title,
+.logintitle {
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--white);
+}
+
+/* Apply Open Sans font to body text */
+.body-work,
+.portbody,
+.left-4,
+p,
+.contact-body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 50;
+  font-size: 16px;
+  color: var(--body);
+}
+
